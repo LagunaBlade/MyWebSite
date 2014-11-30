@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\MyWebSite\bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -31,12 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MyWebSiteInterfaceDAL">
-      <HintPath>..\MyWebSiteDALFactory\bin\Debug\MyWebSiteInterfaceDAL.dll</HintPath>
-    </Reference>
-    <Reference Include="MyWebSiteModel">
-      <HintPath>..\MyWebSiteDALFactory\bin\Debug\MyWebSiteModel.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -50,6 +44,16 @@
     <Compile Include="BaseDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyWebSiteInterfaceDAL\MyWebSiteInterfaceDAL.csproj">
+      <Project>{57527C88-0F44-4850-B225-F65F42720B86}</Project>
+      <Name>MyWebSiteInterfaceDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyWebSiteModel\MyWebSiteModel.csproj">
+      <Project>{58D38E27-A4B4-4768-B98B-1C7F30A0AA0F}</Project>
+      <Name>MyWebSiteModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

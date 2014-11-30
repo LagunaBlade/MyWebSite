@@ -31,15 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MyWebSiteDALFactory">
-      <HintPath>..\MyWebSiteDALFactory\bin\Debug\MyWebSiteDALFactory.dll</HintPath>
-    </Reference>
-    <Reference Include="MyWebSiteInterfaceDAL">
-      <HintPath>..\MyWebSiteInterfaceDAL\bin\Debug\MyWebSiteInterfaceDAL.dll</HintPath>
-    </Reference>
-    <Reference Include="MyWebSiteModel">
-      <HintPath>..\MyWebSiteInterfaceDAL\bin\Debug\MyWebSiteModel.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,6 +42,24 @@
   <ItemGroup>
     <Compile Include="DefaultPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyWebSiteDALFactory\MyWebSiteDALFactory.csproj">
+      <Project>{61914A1E-3CE5-45E8-8D19-124676C84557}</Project>
+      <Name>MyWebSiteDALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyWebSiteDAL\MyWebSiteDAL.csproj">
+      <Project>{77E7B186-82B0-4113-AAA2-939E72AD0A5A}</Project>
+      <Name>MyWebSiteDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyWebSiteInterfaceDAL\MyWebSiteInterfaceDAL.csproj">
+      <Project>{57527C88-0F44-4850-B225-F65F42720B86}</Project>
+      <Name>MyWebSiteInterfaceDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyWebSiteModel\MyWebSiteModel.csproj">
+      <Project>{58D38E27-A4B4-4768-B98B-1C7F30A0AA0F}</Project>
+      <Name>MyWebSiteModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

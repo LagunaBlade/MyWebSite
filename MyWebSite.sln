@@ -4,6 +4,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebSite", "MyWebSite\MyWebSite.csproj", "{0E771820-EAA3-470C-A5CE-19EDA8AE289C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{AC8B642B-86D0-46E8-AA06-F630DB661140} = {AC8B642B-86D0-46E8-AA06-F630DB661140}
+		{77E7B186-82B0-4113-AAA2-939E72AD0A5A} = {77E7B186-82B0-4113-AAA2-939E72AD0A5A}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebSiteModel", "MyWebSiteModel\MyWebSiteModel.csproj", "{58D38E27-A4B4-4768-B98B-1C7F30A0AA0F}"

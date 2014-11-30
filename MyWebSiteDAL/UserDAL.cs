@@ -19,12 +19,15 @@ namespace MyWebSiteDAL
         {
             using (SqlConnection sqlCon = new SqlConnection(BaseDAL.connectString))
             {
-                SqlCommand sqlCommand = sqlCon.CreateCommand();
-                sqlCommand.CommandText = "select * from user";
+                //SqlCommand sqlCommand = sqlCon.CreateCommand();
+                //sqlCommand.CommandText = "select * from user";
+
+                SqlCommand sqlCommand = new SqlCommand();
+                sqlCommand.Connection = sqlCon;
+                sqlCommand.CommandText = "select * from userinfo";
 
                 sqlCon.Open();
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
-
                 while (sqlDataReader.Read())
                 {
                     return true;
