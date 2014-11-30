@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
-using MyWebSite.Control;
+using MyWebSitePresenter;
 
 namespace MyWebSite.View
 {
@@ -37,7 +37,15 @@ namespace MyWebSite.View
 
         protected void Button_Click(object sender, EventArgs e)
         {
-            Response.Write("111111111111");
+            //Response.Write("111111111111");
+            if (presenter.ExistUser())
+            {
+                Response.Write("111111111111");
+            }
+            else
+            {
+                Response.Write("222222222222");
+            }
         }
     }
 }

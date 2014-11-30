@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using MyWebSite.Entity;
-using MyWebSite.Interface;
-using MyWebSite.DAL;
+﻿using MyWebSiteModel;
+using MyWebSiteInterfaceDAL;
+using MyWebSiteDALFactory;
 
-namespace MyWebSite.Control
+namespace MyWebSitePresenter
 {
     public class DefaultPresenter
     {
         private IDefaultView _view;
 
-        public DefaultPresenter(IDefaultView testMvpView) 
+        public DefaultPresenter(IDefaultView testMvpView)
         {
             this._view = testMvpView;
             this.Initialize();
@@ -29,7 +25,7 @@ namespace MyWebSite.Control
             user.UserName = _view.UserName;
             user.Password = _view.Password;
 
-            IUser dal = DALFactory.UserFactory.Create();
+            IUser dal = UserFactory.Create();
             return dal.ExistUser(user);
         }
     }

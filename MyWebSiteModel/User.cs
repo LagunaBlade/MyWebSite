@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
 
-namespace MyWebSite.Entity
+namespace MyWebSiteModel
 {
     /// <summary>
     /// 用户类
     /// </summary>
     public class User
     {
-        #region 属性
+        #region Properties
 
         /// <summary>
         /// 用户名

@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using MyWebSite.Entity;
+using System.Text;
 using System.Data.SqlClient;
-using MyWebSite.Interface;
+using MyWebSiteModel;
+using MyWebSiteInterfaceDAL;
 
-namespace MyWebSite.DAL
+namespace MyWebSiteDAL
 {
     public class UserDAL : IUser
     {
@@ -20,7 +20,7 @@ namespace MyWebSite.DAL
             using (SqlConnection sqlCon = new SqlConnection(BaseDAL.connectString))
             {
                 SqlCommand sqlCommand = sqlCon.CreateCommand();
-                sqlCommand.CommandText = "";
+                sqlCommand.CommandText = "select * from user";
 
                 sqlCon.Open();
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
