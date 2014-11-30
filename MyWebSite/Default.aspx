@@ -8,7 +8,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:LinkButton Text="Click" runat="server" OnClick="Button_Click" />
+        <asp:LinkButton Text="Click" runat="server" ID="LoginButton"/>
     </div>
     </form>
 </body>

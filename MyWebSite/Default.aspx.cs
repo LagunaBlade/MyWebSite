@@ -27,7 +27,7 @@ namespace MyWebSite.View
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            LoginButton.Click += new EventHandler(Button_Click);
         }
 
         public Default()
@@ -37,7 +37,6 @@ namespace MyWebSite.View
 
         protected void Button_Click(object sender, EventArgs e)
         {
-            //Response.Write("111111111111");
             if (presenter.ExistUser())
             {
                 Response.Write("111111111111");

@@ -6,6 +6,10 @@ namespace MyWebSiteDALFactory
 {
     public class UserFactory
     {
+        /// <summary>
+        /// 反射User实例
+        /// </summary>
+        /// <returns></returns>
         public static IUser Create()
         {
             string path = ConfigurationManager.AppSettings["WebDAL"].ToString();
