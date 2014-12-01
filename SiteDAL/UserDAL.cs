@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
-using MyWebSiteModel;
 using MyWebSiteInterfaceDAL;
-using MySql.Data.MySqlClient;
+using MyWebSiteModel;
 
-namespace MyWebSiteDAL
+namespace SiteDAL
 {
     public class UserDAL : IUser
     {
@@ -18,13 +17,14 @@ namespace MyWebSiteDAL
         /// <returns></returns>
         public bool ExistUser(User User)
         {
-            using (MySqlConnection sqlCon = new MySqlConnection(BaseDAL.connectString))
+            using (SqlConnection sqlCon = new SqlConnection(BaseDAL.connectString))
             {
-                MySqlCommand sqlCommand = sqlCon.CreateCommand();
-                sqlCommand.CommandText = "select * from userinfo";
+                SqlCommand sqlCommand = sqlCon.CreateCommand();
+                sqlCommand.CommandText = "select * from user";
 
                 sqlCon.Open();
-                MySqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+
                 while (sqlDataReader.Read())
                 {
                     return true;
