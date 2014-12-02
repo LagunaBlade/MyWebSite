@@ -63,8 +63,8 @@
     <Content Include="Images\ajax-loader.gif" />
     <Content Include="Images\bg.png" />
     <Content Include="Images\bg1.png" />
-    <Content Include="Images\bg2.jpg" />
-    <Content Include="Images\bg3.jpg" />
+    <Content Include="Images\bg2.png" />
+    <Content Include="Images\bg3.png" />
     <Content Include="Images\Default\1.jpg" />
     <Content Include="Images\Default\2.jpg" />
     <Content Include="Images\Default\3.jpg" />
