@@ -21,13 +21,17 @@
         Cufon.replace('h2', { textShadow: '1px 1px #000' });
         Cufon.replace('.footer', { textShadow: '1px 1px #000' });
         Cufon.replace('.pxs_loading', { textShadow: '1px 1px #000' });
-    </script>   
+    </script>
 </head>
 <body>
+    <form runat="server">
     <div class="wrapper">
         <h1>
             Demo Default Page
         </h1>
+        <div>
+            <asp:LinkButton runat="server" OnClick="Login_Click">登录</asp:LinkButton>
+        </div>
     </div>
     <div id="pxs_container" class="pxs_container">
         <div class="pxs_bg">
@@ -74,5 +78,6 @@
             </ul>
         </div>
     </div>
+    </form>
 </body>
 </html>

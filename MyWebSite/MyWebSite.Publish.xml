@@ -1,2 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<publishData />
+<publishData>
+  <publishProfile publishUrl="C:\Users\SweetNail\Desktop\发布包" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Scripts/Default/ChunkFive_400.font.js" publishTime="12/02/2014 19:59:46" />
+    <file relUrl="bin/MyWebSitePresenter.dll" publishTime="12/02/2014 20:45:25" />
+    <file relUrl="Images/ajax-loader.gif" publishTime="12/02/2014 20:03:23" />
+    <file relUrl="bin/MyWebSiteDALFactory.pdb" publishTime="12/02/2014 20:45:24" />
+    <file relUrl="jquery-ui-1.11.2/images/ui-icons_cd0a0a_256x240.png" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="jquery-ui-1.11.2/images/ui-icons_888888_256x240.png" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="bin/MySql.Data.dll" publishTime="12/01/2014 20:40:00" />
+    <file relUrl="jquery-ui-1.11.2/images/ui-bg_flat_0_aaaaaa_40x100.png" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="jquery-ui-1.11.2/jquery-ui.theme.css" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="jquery-ui-1.11.2/jquery-ui.js" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="Images/Default/2.jpg" publishTime="12/02/2014 20:11:18" />
+    <file relUrl="jquery-ui-1.11.2/jquery-ui.min.js" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="Web.config" publishTime="12/02/2014 20:47:22" />
+    <file relUrl="bin/MyWebSite.pdb" publishTime="12/02/2014 20:45:25" />
+    <file relUrl="jquery-ui-1.11.2/images/ui-bg_glass_75_e6e6e6_1x400.png" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="Scripts/jquery-1.9.1.js" publishTime="11/30/2014 19:18:48" />
+    <file relUrl="jquery-ui-1.11.2/external/jquery/jquery.js" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="jquery-ui-1.11.2/images/ui-icons_454545_256x240.png" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="jquery-ui-1.11.2/images/ui-bg_glass_95_fef1ec_1x400.png" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="Images/Default/4.jpg" publishTime="12/02/2014 20:11:18" />
+    <file relUrl="Images/Default/thumbs/5.jpg" publishTime="12/02/2014 20:13:17" />
+    <file relUrl="jquery-ui-1.11.2/images/ui-bg_flat_75_ffffff_40x100.png" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="jquery-ui-1.11.2/images/ui-bg_highlight-soft_75_cccccc_1x100.png" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="CSS/Site.css" publishTime="12/02/2014 19:58:22" />
+    <file relUrl="Images/bg.png" publishTime="12/02/2014 20:03:23" />
+    <file relUrl="Images/Default/thumbs/3.jpg" publishTime="12/02/2014 20:13:17" />
+    <file relUrl="Images/prev.png" publishTime="12/02/2014 20:03:23" />
+    <file relUrl="Images/Default/thumbs/4.jpg" publishTime="12/02/2014 20:13:17" />
+    <file relUrl="Images/Default/1.jpg" publishTime="12/02/2014 20:11:18" />
+    <file relUrl="Images/Default/thumbs/2.jpg" publishTime="12/02/2014 20:13:17" />
+    <file relUrl="jquery-ui-1.11.2/jquery-ui.min.css" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="jquery-ui-1.11.2/jquery-ui.structure.css" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="bin/MyWebSiteModel.pdb" publishTime="12/02/2014 20:45:24" />
+    <file relUrl="Images/Default/6.jpg" publishTime="12/02/2014 20:11:18" />
+    <file relUrl="Images/Default/3.jpg" publishTime="12/02/2014 20:11:18" />
+    <file relUrl="Images/next.png" publishTime="12/02/2014 20:03:23" />
+    <file relUrl="Default.aspx" publishTime="12/02/2014 20:30:08" />
+    <file relUrl="jquery-ui-1.11.2/images/ui-icons_2e83ff_256x240.png" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="jquery-ui-1.11.2/images/ui-bg_glass_65_ffffff_1x400.png" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="CSS/DefaultPage.css" publishTime="12/02/2014 20:34:02" />
+    <file relUrl="Scripts/jquery-1.9.1.min.js" publishTime="11/30/2014 17:27:40" />
+    <file relUrl="jquery-ui-1.11.2/images/ui-bg_glass_55_fbf9ee_1x400.png" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="jquery-ui-1.11.2/images/ui-bg_glass_75_dadada_1x400.png" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="jquery-ui-1.11.2/jquery-ui.structure.min.css" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="bin/MyWebSitePresenter.pdb" publishTime="12/02/2014 20:45:25" />
+    <file relUrl="bin/MyWebSiteModel.dll" publishTime="12/02/2014 20:45:24" />
+    <file relUrl="Images/bg3.png" publishTime="12/02/2014 20:38:11" />
+    <file relUrl="Scripts/Default/jquery.easing.1.3.js" publishTime="12/02/2014 19:59:46" />
+    <file relUrl="Images/bg2.png" publishTime="12/02/2014 20:38:11" />
+    <file relUrl="Scripts/Default/cufon-yui.js" publishTime="12/02/2014 19:59:46" />
+    <file relUrl="Images/Default/5.jpg" publishTime="12/02/2014 20:11:18" />
+    <file relUrl="Images/Default/thumbs/6.jpg" publishTime="12/02/2014 20:13:17" />
+    <file relUrl="bin/MyWebSite.dll" publishTime="12/02/2014 20:45:25" />
+    <file relUrl="bin/MyWebSiteInterfaceDAL.dll" publishTime="12/02/2014 20:45:24" />
+    <file relUrl="bin/MyWebSiteDALFactory.dll" publishTime="12/02/2014 20:45:24" />
+    <file relUrl="Scripts/Default/Initialize.js" publishTime="12/02/2014 20:28:41" />
+    <file relUrl="jquery-ui-1.11.2/jquery-ui.theme.min.css" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="jquery-ui-1.11.2/images/ui-icons_222222_256x240.png" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="Images/Default/thumbs/1.jpg" publishTime="12/02/2014 20:13:17" />
+    <file relUrl="jquery-ui-1.11.2/jquery-ui.css" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="jquery-ui-1.11.2/index.html" publishTime="11/30/2014 03:19:40" />
+    <file relUrl="bin/MyWebSiteInterfaceDAL.pdb" publishTime="12/02/2014 20:45:24" />
+    <file relUrl="Images/bg1.png" publishTime="12/02/2014 20:03:23" />
+  </publishProfile>
+</publishData>

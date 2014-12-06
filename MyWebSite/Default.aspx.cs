@@ -7,7 +7,7 @@ using MyWebSitePresenter;
 
 namespace MyWebSite.View
 {
-    public partial class Default : System.Web.UI.Page, IDefaultView
+    public partial class Default : PageBase, IDefaultView
     {
         private DefaultPresenter presenter;
 
@@ -35,16 +35,19 @@ namespace MyWebSite.View
             this.presenter = new DefaultPresenter(this);
         }
 
-        protected void Button_Click(object sender, EventArgs e)
+        protected void Login_Click(object sender, EventArgs e)
         {
-            if (presenter.ExistUser())
-            {
-                Response.Write("111111111111");
-            }
-            else
-            {
-                Response.Write("222222222222");
-            }
+//            if (presenter.ExistUser())
+//            {
+//                this.Response.Write(@"<script language=javascript>window.open
+//                    ('Login.aspx','newwindow','width=200,height=200')</script>");
+//            }
+//            else
+//            {
+//                Response.Write("222222222222");
+//            }
+
+            Response.Redirect(@"Main\Login.aspx");
         }
     }
 }
