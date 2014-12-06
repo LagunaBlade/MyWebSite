@@ -68,6 +68,7 @@
     <Content Include="CSS\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\bgColor\defaultbg.jpg" />
     <Content Include="Images\loginbg.jpg" />
     <Content Include="Images\bg.png" />
     <Content Include="Images\bg1.png" />
@@ -147,9 +148,7 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="数据库脚本\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="CSS\Login\fonts\BebasNeue-webfont.eot" />
     <None Include="CSS\Login\fonts\BebasNeue-webfont.ttf" />
@@ -160,6 +159,12 @@
     <None Include="CSS\Login\fonts\franchise-bold-webfont.eot" />
     <None Include="CSS\Login\fonts\franchise-bold-webfont.ttf" />
     <None Include="CSS\Login\fonts\franchise-bold-webfont.woff" />
+    <None Include="数据库脚本\库和表创建\GroupPermissionMap表创建.qbquery" />
+    <None Include="数据库脚本\库和表创建\Group表创建.qbquery" />
+    <None Include="数据库脚本\库和表创建\Permission表创建.qbquery" />
+    <None Include="数据库脚本\库和表创建\User表创建.qbquery" />
+    <None Include="数据库脚本\库和表创建\创建库.qbquery" />
+    <None Include="数据库脚本\库和表创建\增加GroupID外键.qbquery" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -21,7 +21,7 @@ namespace MyWebSiteDAL
             using (MySqlConnection sqlCon = new MySqlConnection(BaseDAL.connectString))
             {
                 MySqlCommand sqlCommand = sqlCon.CreateCommand();
-                sqlCommand.CommandText = "select * from userinfo";
+                sqlCommand.CommandText = "select * from user";
 
                 sqlCon.Open();
                 MySqlDataReader sqlDataReader = sqlCommand.ExecuteReader();

@@ -283,7 +283,6 @@
 	-o-animation-name: wobble;
 	animation-name: wobble;
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes pulse {
     0% { -webkit-transform: scale(1); }	
