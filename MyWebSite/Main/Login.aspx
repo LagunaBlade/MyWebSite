@@ -18,7 +18,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div class="container" style="background-image:url(../Images/bgColor/defaultbg.jpg); background-repeat:repeat-y; background-attachment:fixed ">
+    <div class="container" style="background-image:url(../Images/bgColor/defaultbg.jpg);">
         <section>				
                 <div id="container_demo" >
                     <a class="hiddenanchor" id="toregister"></a>

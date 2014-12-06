@@ -7,6 +7,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System.Net;
 using System.Web.UI;
+using MyWebSiteModel;
 
 namespace MyWebSite
 {
@@ -16,32 +17,39 @@ namespace MyWebSite
         {
 
         }
-        /// <summary>
-        /// ViewState ID
-        /// </summary>
-        public string vsId
+
+        protected override void OnPreLoad(EventArgs e)
+        {
+            base.OnPreLoad(e);
+
+            if (base.Request.Cookies["UserName"] == null)
+                base.Response.Redirect("~/Main/Login.aspx");
+        }  
+
+        #region 用户信息Cookie
+
+        private User _ui;
+
+        protected virtual User Ui
         {
             get
             {
-                if (EnableViewState)
-                {
-                    object obj = ViewState["vsId"];
-                    if (obj != null)
-                        return (string)obj;
-                    else
-                        return string.Empty;
-                }
+                if (Session["UserInfo"] != null)
+                    _ui = (User)Session["UserInfo"];
                 else
-                    return string.Empty;
-            }
-            set
-            {
-                if (EnableViewState)
                 {
-                    ViewState["vsId"] = value;
+                    if (Request.Cookies["UserName"] != null)
+                    {
+                        //_ui = UsersBLL.GetUserByUserName(Request.Cookies["UserName"].Value);
+                        Session["UserInfo"] = _ui;
+                    }
                 }
+                return _ui;
             }
+            set { _ui = value; }
         }
+
+        #endregion
 
         #region Alert提示信息
 
@@ -351,7 +359,7 @@ namespace MyWebSite
 
         #region 随机数
         /// <summary>
-        /// 產生隨機的字母
+        /// 产生随机数
         /// </summary>
         /// <returns></returns>
         public static string RandomnAlpha(int i)

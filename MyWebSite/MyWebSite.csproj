@@ -148,7 +148,12 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MyWebSiteModel\MyWebSiteModel.csproj">
+      <Project>{58D38E27-A4B4-4768-B98B-1C7F30A0AA0F}</Project>
+      <Name>MyWebSiteModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="CSS\Login\fonts\BebasNeue-webfont.eot" />
     <None Include="CSS\Login\fonts\BebasNeue-webfont.ttf" />
