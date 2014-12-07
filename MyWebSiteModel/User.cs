@@ -15,11 +15,11 @@ namespace MyWebSiteModel
         /// <summary>
         /// 用户名
         /// </summary>
-        private string userName;
-        public string UserName
+        private string name;
+        public string Name
         {
-            get { return userName; }
-            set { userName = value; }
+            get { return name; }
+            set { name = value; }
         }
 
         /// <summary>
@@ -30,6 +30,16 @@ namespace MyWebSiteModel
         {
             get { return password; }
             set { password = value; }
+        }
+
+        /// <summary>
+        /// Email
+        /// </summary>
+        private string email;
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
         }
 
         #endregion

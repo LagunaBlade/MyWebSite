@@ -22,7 +22,7 @@ namespace MyWebSitePresenter
         public bool ExistUser()
         {
             User user = new User();
-            user.UserName = _view.UserName;
+            user.Name = _view.UserName;
             user.Password = _view.Password;
 
             IUser dal = UserFactory.Create();

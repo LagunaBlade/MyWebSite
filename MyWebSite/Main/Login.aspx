@@ -6,7 +6,7 @@
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en" class="no-js">
+<%--<html lang="en" class="no-js">--%>
 <!--<![endif]-->
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -29,18 +29,18 @@
                                 <h1>登录</h1> 
                                 <p> 
                                     <label for="username" class="uname" data-icon="u" > Email/用户名 </label>
-                                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com" runat="server"/>
                                 </p>
                                 <p> 
                                     <label for="password" class="youpasswd" data-icon="p"> 密码 </label>
-                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" runat="server" /> 
                                 </p>
                                 <p class="keeplogin"> 
 									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
 									<label for="loginkeeping">保持登录</label>
 								</p>
                                 <p class="login button"> 
-                                    <input type="submit" value="登录" /> 
+                                    <input type="button" value="登录" runat="server" id="btnLogin"/> 
 								</p>
                                 <p class="change_link">
 									还没注册?

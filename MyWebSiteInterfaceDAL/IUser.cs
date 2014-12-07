@@ -9,5 +9,7 @@ namespace MyWebSiteInterfaceDAL
     public interface IUser
     {
         bool ExistUser(User user);
+
+        User GetLoginUser(User user);
     }
 }

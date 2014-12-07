@@ -28,6 +28,11 @@ namespace MyWebSite.View
         protected void Page_Load(object sender, EventArgs e)
         {
             //LoginButton.Click += new EventHandler(Button_Click);
+            //Cookies["UserName"] = "Guest";
+
+            HttpCookie cookie = new HttpCookie("UserName");
+            cookie.Value = "Guest";
+            HttpContext.Current.Response.Cookies.Add(cookie); 
         }
 
         public Default()

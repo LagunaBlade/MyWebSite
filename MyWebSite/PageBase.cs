@@ -22,8 +22,11 @@ namespace MyWebSite
         {
             base.OnPreLoad(e);
 
-            if (base.Request.Cookies["UserName"] == null)
-                base.Response.Redirect("~/Main/Login.aspx");
+            if (Request.Url.AbsolutePath != "/Main/Login.aspx")
+            {
+                if (base.Request.Cookies["UserName"] == null)
+                    base.Response.Redirect("~/Main/Login.aspx");
+            }
         }  
 
         #region 用户信息Cookie
