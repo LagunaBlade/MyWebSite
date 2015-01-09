@@ -29,9 +29,6 @@
      <%--   <h1>
             Demo Default Page
         </h1>--%>
-        <div style="margin-left:70%;">
-            <asp:LinkButton runat="server" OnClick="Login_Click">登录/注册</asp:LinkButton>
-        </div>
     </div>
     <div id="pxs_container" class="pxs_container">
         <div class="pxs_bg">

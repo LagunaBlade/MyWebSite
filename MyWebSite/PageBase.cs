@@ -24,8 +24,10 @@ namespace MyWebSite
 
             if (Request.Url.AbsolutePath != "/Main/Login.aspx")
             {
-                if (base.Request.Cookies["UserName"] == null)
+                if (Session["User"] == null)
+                {
                     base.Response.Redirect("~/Main/Login.aspx");
+                }
             }
         }  
 

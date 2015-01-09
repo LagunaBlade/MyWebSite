@@ -8,8 +8,23 @@ namespace MyWebSiteModel
     /// <summary>
     /// 用户类
     /// </summary>
-    public class User
+    public class User : ICloneable
     {
+        #region Fields
+
+        /// <summary>
+        /// 表名称
+        /// </summary>
+        public const string TableName = "user";
+
+        #endregion
+
+        #region Contructors
+
+        public User() { }
+
+        #endregion
+
         #region Properties
 
         /// <summary>
@@ -40,6 +55,24 @@ namespace MyWebSiteModel
         {
             get { return email; }
             set { email = value; }
+        }
+
+        #endregion
+
+        #region Methods
+
+        public User Clone()
+        {
+            User entity = new User();
+            entity.name = this.name;
+            entity.password = this.password;
+            entity.email = this.email;
+            return entity;
+        }
+
+        object ICloneable.Clone()
+        {
+            return this.Clone();
         }
 
         #endregion

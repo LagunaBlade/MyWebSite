@@ -45,11 +45,16 @@ namespace MyWebSite.Main
         {
             if (presenter.GetLoginUser() != null)
             {
-                Response.Write("111111111111");
+                //HttpCookie cookie = new HttpCookie("UserName");
+                //cookie.Value = presenter.GetLoginUser();
+                //HttpContext.Current.Response.Cookies.Add(cookie);
+                Session["User"] = presenter.GetLoginUser();
+
+                Response.Redirect(@"~\Default.aspx");
             }
             else
             {
-                Response.Write("222222222222");
+                base.Alert(this, "用户名或密码错误，请重新输入！");
             }
         }
     }
