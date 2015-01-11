@@ -49,23 +49,23 @@ namespace MyWebSiteDAL
         {
             List<User> userList = new List<User>();
 
-            using (MySqlConnection sqlCon = new MySqlConnection(BaseDAL.connectString))
-            {
-                MySqlCommand sqlCommand = sqlCon.CreateCommand();
-                sqlCommand.CommandText = "select * from user where name = @name and password = @password";
-                sqlCommand.Parameters.AddWithValue("@name", User.Name);
-                sqlCommand.Parameters.AddWithValue("@password", User.Password);
+            //using (MySqlConnection sqlCon = new MySqlConnection(BaseDAL.connectString))
+            //{
+            //    MySqlCommand sqlCommand = sqlCon.CreateCommand();
+            //    sqlCommand.CommandText = "select * from user where name = @name and password = @password";
+            //    sqlCommand.Parameters.AddWithValue("@name", User.Name);
+            //    sqlCommand.Parameters.AddWithValue("@password", User.Password);
 
-                MySqlDataAdapter adapter = new MySqlDataAdapter(sqlCommand);
-                DataTable data = new DataTable();
-                adapter.Fill(data);
-                userList = ExecuteEntity.GetEntities<User>(data);
+            //    MySqlDataAdapter adapter = new MySqlDataAdapter(sqlCommand);
+            //    DataTable data = new DataTable();
+            //    adapter.Fill(data);
+            //    userList = ExecuteEntity.GetEntities<User>(data);
 
-                if (userList.Count == 1)
-                {
-                    return userList[0];
-                }
-            }
+            //    if (userList.Count == 1)
+            //    {
+            //        return userList[0];
+            //    }
+            //}
 
             return null;
         }

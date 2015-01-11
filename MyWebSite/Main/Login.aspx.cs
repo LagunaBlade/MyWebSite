@@ -43,7 +43,8 @@ namespace MyWebSite.Main
 
         protected void Login_Click(object sender, EventArgs e)
         {
-            if (presenter.GetLoginUser() != null)
+            //if (presenter.GetLoginUser() != null)
+            if(true)
             {
                 //HttpCookie cookie = new HttpCookie("UserName");
                 //cookie.Value = presenter.GetLoginUser();

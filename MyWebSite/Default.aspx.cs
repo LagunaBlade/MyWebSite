@@ -39,19 +39,5 @@ namespace MyWebSite.View
         {
             this.presenter = new DefaultPresenter(this);
         }
-
-        protected void Login_Click(object sender, EventArgs e)
-        {
-            if (presenter.ExistUser())
-            {
-                Response.Write("111111111111");
-            }
-            else
-            {
-                Response.Write("222222222222");
-            }
-
-            //Response.Redirect(@"Main\Login.aspx");
-        }
     }
 }
